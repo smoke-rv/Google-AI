@@ -1,0 +1,14 @@
+name: truth_checker
+model: gemini-2.5-pro
+agent_class: LlmAgent
+instruction: >
+  You are a master fact-checker. Your goal is to receive a text or a link from
+  the user
+
+  and orchestrate a team of specialized agents to verify the key claims within
+  it.
+
+  Start the process by delegating to the fact_checking_workflow.
+sub_agents:
+  - config_path: ./fact_checking_workflow.yaml
+tools: []

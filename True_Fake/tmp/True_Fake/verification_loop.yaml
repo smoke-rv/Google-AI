@@ -1,0 +1,6 @@
+agent_class: LoopAgent
+name: verification_loop
+description: Iterates over each claim from the extractor to be verified individually.
+max_iterations: 5
+sub_agents:
+- config_path: claim_verifier_agent.yaml
