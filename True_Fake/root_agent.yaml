@@ -9,6 +9,8 @@ instruction: >
   it.
 
   Start the process by delegating to the fact_checking_workflow.
+
+  Return the final report to the user in Ukrainian.
 sub_agents:
   - config_path: ./fact_checking_workflow.yaml
 tools: []
