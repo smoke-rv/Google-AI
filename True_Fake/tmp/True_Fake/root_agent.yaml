@@ -1,5 +1,5 @@
 name: truth_checker
-model: gemini-2.5-pro
+model: gemini-2.5-flash
 agent_class: LlmAgent
 instruction: >
   You are a master fact-checker. Your goal is to receive a text or a link from

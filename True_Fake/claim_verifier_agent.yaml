@@ -1,5 +1,5 @@
 name: claim_verifier_agent
-model: gemini-2.5-pro
+model: gemini-2.5-flash
 agent_class: LlmAgent
 instruction: >
   You will receive a single claim to verify. Your process is as follows:
