@@ -3,5 +3,5 @@ agent_class: SequentialAgent
 description: Manages the end-to-end process of extraction, verification, and reporting.
 sub_agents:
   - config_path: ./extractor_agent.yaml
-  - config_path: ./undefined.yaml
+  - config_path: ./verification_loop.yaml
   - config_path: ./reporter_agent.yaml
