@@ -45,12 +45,7 @@ Google AI/
 │   ├── .env
 │   ├── .env.example
 │   └── root_agent.yaml
-└── QA_expert/               # Агент для аналізу Office документів
-    ├── .env
-    ├── .env.example
-    ├── root_agent.yaml
-    └── tools/
-        └── office_reader.py
+
 ```
 
 ## ⚠️ Безпека
@@ -67,6 +62,3 @@ Google AI/
 
 ### True_Fake
 Агент для перевірки фактів. Аналізує текст, витягує твердження та перевіряє їх через Google Search.
-
-### QA_expert
-Агент для аналізу Microsoft Office документів (.docx, .xlsx, .pptx). Витягує текст та відповідає на питання.
