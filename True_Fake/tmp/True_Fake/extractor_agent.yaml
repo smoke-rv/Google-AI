@@ -1,9 +1,13 @@
 name: extractor_agent
 model: gemini-2.5-pro
 agent_class: LlmAgent
-instruction: |
-  Analyze the user's input text. Your task is to identify and extract 3-5 key,
-  verifiable statements or claims.
+instruction: >-
+  Analyze the user's input, which could be text or a URL. Your task is to
+  identify and extract 3-5 key,
+
+  verifiable statements or claims from the content.
+
   Return these claims as a simple list.
 sub_agents: []
-tools: []
+tools:
+  - name: url_context
